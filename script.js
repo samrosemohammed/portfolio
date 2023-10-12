@@ -1,11 +1,18 @@
 "use-stict";
-const submitBtn = document.querySelector(".submit-btn");
-Email.send({
-  Host: "smtp.elasticemail.com",
-  Username: "username",
-  Password: "password",
-  To: "them@website.com",
-  From: "you@isp.com",
-  Subject: "This is the subject",
-  Body: "And this is the body",
-}).then((message) => alert(message));
+
+const iconBtn = document.querySelector(".icon-btn");
+const iconOpen = document.querySelector(".icon-open");
+const iconClose = document.querySelector(".icon-close");
+const mobileNav = document.querySelector(".mobile-nav");
+const toggleMobileNav = () => {
+  if (iconClose.classList.contains("hidden")) {
+    iconOpen.classList.add("hidden");
+    iconClose.classList.remove("hidden");
+    mobileNav.classList.remove("hidden");
+  } else {
+    iconOpen.classList.remove("hidden");
+    iconClose.classList.add("hidden");
+    mobileNav.classList.add("hidden");
+  }
+};
+document.querySelector(".icon-btn").addEventListener("click", toggleMobileNav);
