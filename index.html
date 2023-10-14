@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Unicons Icon -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- Ionicons (Icon) -->
@@ -23,37 +30,37 @@
     <title>Samrose | Portfolio</title>
   </head>
   <body>
-    <header class="flex justify-between items-center py-6 px-12">
+    <header class="flex justify-between items-center py-6 md:px-12 px-6">
       <a class="" href="#"
-        ><img class="w-1/2 object-contain" src="img/brand-logo.png" alt=""
+        ><img class="w-1/3 object-contain" src="img/brand-logo.png" alt=""
       /></a>
 
       <nav class="hidden md:block">
         <ul class="flex gap-[2vw]">
           <li class="">
             <a
-              class="text-xl text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500"
               href="#"
               >Home</a
             >
           </li>
           <li class="">
             <a
-              class="text-xl text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500"
               href="#"
               >Home</a
             >
           </li>
           <li class="">
             <a
-              class="text-xl text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500"
               href="#"
               >Home</a
             >
           </li>
           <li class="">
             <a
-              class="text-xl text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500"
               href="#"
               >Home</a
             >
@@ -63,11 +70,11 @@
 
       <button class="btn icon-btn md:hidden">
         <ion-icon
-          class="icon-open w-[48px] h-[48px]"
+          class="icon-open w-[40px] h-[40px]"
           name="menu-outline"
         ></ion-icon>
         <ion-icon
-          class="icon-close w-[48px] h-[48px] hidden"
+          class="icon-close w-[40px] h-[40px] hidden"
           name="close-outline"
         ></ion-icon>
       </button>
@@ -75,7 +82,7 @@
 
     <!-- Mobile Navigation  -->
     <div
-      class="mobile-nav hidden md:hidden block absolute top-[65px] right-[56px] min-w-[140px] text-center rounded py-3 my-2 custom-gradient"
+      class="mobile-nav hidden md:hidden absolute top-[65px] right-[38px] min-w-[140px] text-center rounded py-3 my-2 custom-gradient"
     >
       <nav class="text-[18px]">
         <ul class="list-none">
@@ -102,34 +109,186 @@
         </ul>
       </nav>
     </div>
+
     <main>
-      <section class="hero-section flex md:flex-row flex-col py-24">
-        <div
-          class="flex justify-between items-center px-36 text-center md:text-left"
-        >
-          <div
-            class="hero-title flex flex-row justify-between items-center w-full"
-          >
-            <div>
-              <h1
-                class="flex-1 font-semibold tracking-tight text-[72px] leading-snug"
+      <!-- Hero Section -->
+      <section class="md:px-24 md:py-24 py-10 lg:text-left text-center">
+        <div class="hero-box flex lg:flex-row flex-col gap-[2vw] z-[2]">
+          <div class="flex-1 mb-8">
+            <h1
+              class="xl:text-[72px] md:text-[55px] text-[38px] leading-tight font-bold xl:mb-12 mb-4 tracking-tight"
+            >
+              I'm Samrose <br />
+              <span class="md:inline-block hidden">A</span> Software Engineer
+              <br />
+              <span class="text-cyan-300">Student.</span>
+            </h1>
+            <p
+              class="text-[18px] md:max-w-[470px] max-w-[300px] lg:text-left lg:mx-0 mx-auto text-slate-400"
+            >
+              A self educated learner who believe in the courage of trying once
+              more even though he fails.
+            </p>
+
+            <!-- <div class="hire-box text-white">
+              <a
+                class="bg-blue-600 px-[15px] py-[5px] rounded-full mr-2"
+                href="#"
+                >Resume</a
               >
-                I'm Samrose
-                <br />
-                A Software Engineer
-                <br />
-                <span class="text-cyan-300">Student.</span>
-              </h1>
-              <p class="max-w-[470px] mt-5 text-slate-300">
-                A self educated learner who believe in the courage of trying
-                once more even though he fails.
-              </p>
+              <a
+                class="border-2 border-slate-700 px-[15px] py-[5px] rounded-full mr-2"
+                href="#"
+                >Github Profile</a
+              >
+              <a class="bg-blue-600 px-[15px] py-[5px] rounded-full" href="#"
+                >Hire Me</a
+              >
+            </div> -->
+          </div>
+          <div
+            class="container mx-auto lg:mx-0 lg:w-1/3 text-center w-[85%] relative"
+          >
+            <img class="z-[5]" src="img/code.png" alt="" />
+            <div
+              class="w-[45%] h-[45%] top-0 z-[0] pink-gradient absolute"
+            ></div>
+            <div
+              class="w-[30%] h-[30%] bottom-40 rounded-full top-0 right-20 z-[0] white-gradient absolute"
+            ></div>
+            <div
+              class="w-[80%] h-[80%] buttom-20 rounded-full top-0 right-20 z-[1] blue-gradient absolute"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 Section -->
+      <section class="md:px-24 md:py-24">
+        <div class="container mx-auto tracking-tight">
+          <div class="text-center mb-10">
+            <h2
+              class="md:text-[28px] text-[24px] capitalize md:leading-normal leading-tight"
+            >
+              tools i used often to build application
+              <span class="font-semibold">software.</span>
+            </h2>
+          </div>
+
+          <div
+            class="tool-container grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[10px] md:max-w-[1080px] max-w-[320px] mx-auto"
+          >
+            <div
+              class="tool-box tool-bg p-8 border-2 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[8px]">
+                <ion-icon
+                  class="w-[30px] h-[30px] bg-red-600 p-2 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-red-600 duration-300"
+                  name="logo-html5"
+                ></ion-icon>
+                <p>HTML</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[8px]">
+                <ion-icon
+                  class="w-[28px] h-[28px] bg-cyan-700 p-2 rounded-full hover:bg-inherit hover:border-2 hover:border-cyan-800 border-2 border-transparent duration-300"
+                  name="logo-css3"
+                ></ion-icon>
+                <p>CSS</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[28px] h-[28px] bg-yellow-500 p-2 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-yellow-600 duration-300"
+                  name="logo-javascript"
+                ></ion-icon>
+                <p>JavaScript</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[34px] h-[34px] bg-green-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-green-600 duration-300"
+                  name="logo-nodejs"
+                ></ion-icon>
+                <p>Node Js</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-blue-600 duration-300"
+                  name="logo-react"
+                ></ion-icon>
+                <p>React Js</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[34px] h-[34px] bg-orange-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-orange-600 duration-300"
+                  name="logo-python"
+                ></ion-icon>
+                <p>Python</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[34px] h-[34px] bg-red-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-red-600 duration-300"
+                  name="logo-angular"
+                ></ion-icon>
+                <p>Angular</p>
+              </div>
+            </div>
+            <div
+              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+            >
+              <div class="flex items-center gap-[6px]">
+                <ion-icon
+                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-blue-600 duration-300"
+                  name="logo-codepen"
+                ></ion-icon>
+                <p>Code Pen</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div>
-          <img src="img/hero.png" alt="Hero Image" />
+      <section class="about-secion md:px-24 md:py-24">
+        <div class="container mx-auto">
+          <div class="about-tile mb-8">
+            <span class="text-slate-400 text-[18px]">About</span>
+            <h2 class="capitalize md:text-[40px] font-semibold">
+              let me introduce more about
+              <span class="text-cyan-300">myself.</span>
+            </h2>
+          </div>
+          <div class="max-w-[1200px]">
+            <p class="leading-relaxed text-slate-400">
+              I am a full-stack web developer and UI/UX designer with 1 years of
+              experience. With a passion for creating intuitive and
+              user-friendly interfaces, I have honed my skills in HTML, CSS,
+              JavaScript, and various front-end frameworks.Take a look at my
+              portfolio and see how I can help you create your next digital
+              project.
+            </p>
+          </div>
         </div>
       </section>
     </main>

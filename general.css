@@ -6,3 +6,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
+.container-box {
+  max-width: 1200px;
+  margin: auto;
+}
