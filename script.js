@@ -16,3 +16,7 @@ const toggleMobileNav = () => {
   }
 };
 document.querySelector(".icon-btn").addEventListener("click", toggleMobileNav);
+
+/////////////////////////////////
+/* For carousel */
+////////////////////////////////
