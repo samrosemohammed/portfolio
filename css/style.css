@@ -1,0 +1,59 @@
+.custom-gradient {
+  background: linear-gradient(135deg, #192f6a, #3b5998);
+}
+
+.blue-gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  border: 1px solid #333;
+  filter: blur(123px);
+}
+
+.pink-gradient {
+  background: linear-gradient(90deg, #f4c4f3, 0% #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white-gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.tool-bg {
+  background-color: #272a3099;
+}
+
+/* Sticky nav */
+/* .header {
+  position: relative;
+  transform: top 0.3s;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #272a3099;
+  z-index: 999;
+} */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #272a3099;
+  z-index: 999;
+}
+
+.sticky .hero-section {
+  margin-top: 75px;
+}
+
+/* .hero-section {
+  border-bottom: 1px solid #192f6a;
+} */
+
+/* for switch mode */

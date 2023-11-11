@@ -10,8 +10,10 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/brand-icon.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- Ionicons (Icon) -->
     <script
       type="module"
@@ -23,14 +25,18 @@
     ></script>
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Typed Js -->
 
     <!-- JavaScript -->
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
+
     <title>Samrose | Portfolio</title>
   </head>
+
   <body>
-    <header class="flex justify-between items-center py-6 md:px-12 px-6">
+    <header class="header flex justify-between items-center py-6 md:px-12 px-6">
       <a class="" href="#"
         ><img class="w-1/3 object-contain" src="img/brand-logo.png" alt=""
       /></a>
@@ -47,22 +53,22 @@
           <li class="">
             <a
               class="text-[18px] text-slate-400 hover:text-white duration-500"
-              href="#"
-              >Home</a
+              href="#about"
+              >About</a
             >
           </li>
           <li class="">
             <a
               class="text-[18px] text-slate-400 hover:text-white duration-500"
-              href="#"
-              >Home</a
+              href="#services"
+              >Services</a
             >
           </li>
           <li class="">
             <a
               class="text-[18px] text-slate-400 hover:text-white duration-500"
-              href="#"
-              >Home</a
+              href="#projects"
+              >Projects</a
             >
           </li>
         </ul>
@@ -82,7 +88,7 @@
 
     <!-- Mobile Navigation  -->
     <div
-      class="mobile-nav hidden md:hidden absolute top-[65px] right-[38px] min-w-[140px] text-center rounded py-3 my-2 custom-gradient"
+      class="fixed mobile-nav hidden md:hidden top-[65px] right-[38px] min-w-[140px] text-center rounded py-3 my-2 tool-bg"
     >
       <nav class="text-[18px]">
         <ul class="list-none">
@@ -106,25 +112,35 @@
               >Service</a
             >
           </li>
+          <li class="">
+            <a
+              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
 
     <main>
       <!-- Hero Section -->
-      <section class="md:px-24 md:py-24 py-10 lg:text-left text-center">
+      <section
+        id="home"
+        class="hero-section md:px-24 md:py-24 py-10 lg:text-left text-center"
+      >
         <div class="hero-box flex lg:flex-row flex-col gap-[2vw] z-[2]">
           <div class="flex-1 mb-8">
             <h1
-              class="xl:text-[72px] md:text-[55px] text-[38px] leading-tight font-bold xl:mb-12 mb-4 tracking-tight"
+              class="xl:text-[72px] md:text-[62px] sm:text-[58px] text-[38px] leading-tight font-bold xl:mb-12 mb-4 tracking-tight"
             >
               I'm Samrose <br />
               <span class="md:inline-block hidden">A</span> Software Engineer
               <br />
-              <span class="text-cyan-300">Student.</span>
+              <span class="multiple text-cyan-300">Student.</span>
             </h1>
             <p
-              class="text-[18px] md:max-w-[470px] max-w-[300px] lg:text-left lg:mx-0 mx-auto text-slate-400"
+              class="text-[18px] sm:max-w-[470px] max-w-[300px] lg:text-left lg:mx-0 mx-auto text-slate-400"
             >
               A self educated learner who believe in the courage of trying once
               more even though he fails.
@@ -147,7 +163,7 @@
             </div> -->
           </div>
           <div
-            class="container mx-auto lg:mx-0 lg:w-1/3 text-center w-[85%] relative"
+            class="container mx-auto lg:mx-0 lg:w-1/3 text-center w-[55%] relative"
           >
             <img class="z-[5]" src="img/code.png" alt="" />
             <div
@@ -164,7 +180,7 @@
       </section>
 
       <!-- 2 Section -->
-      <section class="md:px-24 md:py-24 py-16">
+      <section id="tools" class="md:px-24 md:py-24 px-5 py-16">
         <div class="container mx-auto tracking-tight">
           <div class="text-center mb-10">
             <h2
@@ -176,91 +192,91 @@
           </div>
 
           <div
-            class="tool-container grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[10px] md:max-w-[1080px] max-w-[320px] mx-auto"
+            class="tool-container grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[10px] md:max-w-[1080px] max-w-[780px] mx-auto"
           >
             <div
-              class="tool-box tool-bg p-8 border-2 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg p-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[8px]">
                 <ion-icon
-                  class="w-[30px] h-[30px] bg-red-600 p-2 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-red-600 duration-300"
+                  class="w-[30px] h-[30px] bg-red-600 p-2 rounded-full border-2 border-transparent"
                   name="logo-html5"
                 ></ion-icon>
                 <p>HTML</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[8px]">
                 <ion-icon
-                  class="w-[28px] h-[28px] bg-cyan-700 p-2 rounded-full hover:bg-inherit hover:border-2 hover:border-cyan-800 border-2 border-transparent duration-300"
+                  class="w-[28px] h-[28px] bg-cyan-700 p-2 rounded-full border-2 border-transparent"
                   name="logo-css3"
                 ></ion-icon>
                 <p>CSS</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[28px] h-[28px] bg-yellow-500 p-2 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-yellow-600 duration-300"
+                  class="w-[28px] h-[28px] bg-yellow-500 p-2 rounded-full border-2 border-transparent"
                   name="logo-javascript"
                 ></ion-icon>
                 <p>JavaScript</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[34px] h-[34px] bg-green-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-green-600 duration-300"
+                  class="w-[34px] h-[34px] bg-green-600 p-1 rounded-full border-2 border-transparent"
                   name="logo-nodejs"
                 ></ion-icon>
                 <p>Node Js</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-blue-600 duration-300"
+                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent"
                   name="logo-react"
                 ></ion-icon>
                 <p>React Js</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[34px] h-[34px] bg-orange-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-orange-600 duration-300"
+                  class="w-[34px] h-[34px] bg-orange-600 p-1 rounded-full border-2 border-transparent"
                   name="logo-python"
                 ></ion-icon>
                 <p>Python</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[34px] h-[34px] bg-red-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-red-600 duration-300"
+                  class="w-[34px] h-[34px] bg-red-600 p-1 rounded-full border-2 border-transparent"
                   name="logo-angular"
                 ></ion-icon>
                 <p>Angular</p>
               </div>
             </div>
             <div
-              class="tool-box tool-bg px-8 py-8 border-transparent hover:border-2 hover:border-green-600 hover:-translate-y-1.5 duration-150"
+              class="tool-box tool-bg px-8 py-8 border-2 border-transparent hover:border-2 hover:border-green-600 duration-150"
             >
               <div class="flex items-center gap-[6px]">
                 <ion-icon
-                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent hover:bg-inherit hover:border-2 hover:border-blue-600 duration-300"
+                  class="w-[34px] h-[34px] bg-blue-600 p-1 rounded-full border-2 border-transparent"
                   name="logo-codepen"
                 ></ion-icon>
                 <p>Code Pen</p>
@@ -270,7 +286,10 @@
         </div>
       </section>
 
-      <section class="about-secion md:px-24 md:py-24 px-10 pb-10">
+      <section
+        id="about"
+        class="about-secion md:px-24 md:py-24 sm:px-10 px-5 pb-10"
+      >
         <div class="container mx-auto">
           <div class="about-tile md:mb-8 mb-4">
             <span
@@ -425,7 +444,7 @@
             <br class="md:hidden" />
             <a
               class="bg-green-800 px-[15px] py-[5px] rounded-full hover:bg-green-700 duration-300"
-              href="#"
+              href="mailto:samrose.mohammed@email.com"
               target="_blank"
               >Hire Me</a
             >
@@ -433,88 +452,325 @@
         </div>
       </section>
 
-      <section class="service-section md:px-24 py-24">
+      <section
+        id="services"
+        class="service-section xl:px-24 lg:px-16 md:py-24 md:px-10 sm:px-10 px-5 py-10"
+      >
         <div class="container mx-auto">
-          <div class="service-head">
+          <div class="service-head mb-10">
             <!-- <span
               class="capitalize text-[16px] text-slate-400 border-b-2 border-green-400 mb-1 inline-block"
               >services</span
             > -->
-            <h2 class="capitalize text-[28px] text-center mb-10">
+            <h2 class="capitalize text-[28px] text-center">
               Here are few services i can
               <span class="font-bold">offer !!</span>
             </h2>
+          </div>
 
-            <div
-              class="relative slider-container max-w-[1024px] mx-auto flex md:flex-row flex-col gap-[2vw]"
-            >
-              <div class="slider-content tool-bg p-8 rounded-xl">
-                <ion-icon
-                  class="mb-3 w-[32px] h-[32px] text-cyan-400"
-                  name="desktop-outline"
-                ></ion-icon>
-                <div>
-                  <h3 class="text-[20px] font-semibold mb-2">
-                    Web Development
-                  </h3>
-                  <p class="text-slate-400 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Fugit sit, pariatur dolore distinctio
-                  </p>
-                </div>
-                <a class="border-b-2 border-green-600" href="#">See More</a>
+          <div
+            class="relative slider-container max-w-[1200px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 md:gap-[1vw] gap-[2vw]"
+          >
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="mb-3 w-[32px] h-[32px] text-cyan-400"
+                name="desktop-outline"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Web Development</h3>
+                <p class="text-slate-400 mb-6">
+                  Looking for modern attractive website with low and
+                  refractorable code. I can built it for you
+                </p>
               </div>
+              <a class="border-b-2 border-green-600" href="#">See More</a>
+            </div>
 
-              <div class="slider-content tool-bg p-8 rounded-xl">
-                <ion-icon
-                  class="mb-3 w-[32px] h-[32px] text-cyan-400"
-                  name="sparkles-outline"
-                ></ion-icon>
-                <div>
-                  <h3 class="text-[20px] font-semibold mb-2">UI/UX Design</h3>
-                  <p class="text-slate-400 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Fugit sit, pariatur dolore distinctio
-                  </p>
-                </div>
-                <a class="border-b-2 inline-block border-green-600" href="#"
-                  >See More</a
-                >
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="mb-3 w-[32px] h-[32px] text-cyan-400"
+                name="sparkles-outline"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">UI/UX Design</h3>
+                <p class="text-slate-400 mb-6">
+                  I persenally care about the user prospect. Therefore I design
+                  UI and implement it on webpage with better UX
+                </p>
               </div>
-
-              <div class="slider-content tool-bg p-8 rounded-xl">
-                <ion-icon
-                  class="text-cyan-400 mb-3 w-[32px] h-[32px] rounded-full"
-                  name="settings-outline"
-                ></ion-icon>
-                <div>
-                  <h3 class="text-[20px] font-semibold mb-2">Web Hosting</h3>
-                  <p class="text-slate-400 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Fugit sit, pariatur dolore
-                  </p>
-                </div>
-                <a class="border-b-2 border-green-600" href="#">See More</a>
-              </div>
-
-              <button
-                class="flex items-center btn left--btn absolute top-1/2 -left-14 transform -translate-x-1/2 -translate-y-1/2 border-2 border-green-600 p-2 rounded-full"
+              <a class="border-b-2 inline-block border-green-600" href="#"
+                >See More</a
               >
-                <ion-icon
-                  class="w-[24px] h-[24px] text-slate-400"
-                  name="arrow-back-outline"
-                ></ion-icon>
-              </button>
-              <button
-                class="flex items-center btn btn--right absolute top-1/2 -right-14 transform translate-x-1/2 -translate-y-1/2 border-2 border-green-600 p-2 rounded-full"
-              >
-                <ion-icon
-                  class="w-[24px] h-[24px] text-slate-400"
-                  name="arrow-forward-outline"
-                ></ion-icon>
-              </button>
+            </div>
+
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="text-cyan-400 mb-3 w-[32px] h-[32px] rounded-full"
+                name="settings-outline"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Web Hosting</h3>
+                <p class="text-slate-400 mb-6">
+                  Want your website hosted globaly so that you can increase your
+                  product sales. Don't worry I can help you
+                </p>
+              </div>
+              <a class="border-b-2 border-green-600" href="#">See More</a>
+            </div>
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="text-cyan-400 mb-3 w-[32px] h-[32px] rounded-full"
+                name="image-outline"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Graphic Design</h3>
+                <p class="text-slate-400 mb-6">
+                  Advertising your product online is great. I can create
+                  attractive post, banner, video to attract most of the user.
+                </p>
+              </div>
+              <a class="border-b-2 border-green-600" href="#">See More</a>
+            </div>
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="text-cyan-400 mb-3 w-[32px] h-[32px] rounded-full"
+                name="server-outline"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">DataBase</h3>
+                <p class="text-slate-400 mb-6">
+                  Storing or manipulating your user information in structure
+                  manner you need a database.
+                </p>
+              </div>
+              <a class="border-b-2 border-green-600" href="#">See More</a>
+            </div>
+            <div class="slider-content tool-bg p-8 rounded-xl">
+              <ion-icon
+                class="text-cyan-400 mb-3 w-[32px] h-[32px] rounded-full"
+                name="logo-python"
+              ></ion-icon>
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">BackEnd</h3>
+                <p class="text-slate-400 mb-6">
+                  Server side work or work realted to API. Maintain your website
+                  dyanamically through backend.
+                </p>
+              </div>
+              <a class="border-b-2 border-green-600" href="#">See More</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="project-section xl:p-24 lg:px-13 md:px-10 sm:px-10 px-5 py-10"
+      >
+        <div class="container mx-auto">
+          <div class="service-head mb-10 text-center">
+            <h2 class="capitalize text-[28px] text-center mb-4">
+              Recent <span class="text-cyan-300 font-semibold">Projects</span> I
+              Have done so Far
+            </h2>
+            <p class="text-slate-400 tracking-wide">
+              All these projects are just for
+              <span class="font-semibold">learning purpose</span>.
+            </p>
+          </div>
+
+          <div
+            class="project-body max-w-[1080px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 md:gap-[1vw] gap-[3vw] rounded"
+          >
+            <div class="tool-bg p-8 rounded-lg">
+              <img class="rounded mb-6" src="img/omnifood-image.png" alt="" />
+
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Ominfood Project</h3>
+                <p class="text-slate-400">
+                  Static front-end project. The main goal of this project was to
+                  learn about everthing about Html, CSS. Now I can build any
+                  website with scratch.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  class="cursor-pointer border-2 border-slate-700 px-4 py-1 rounded-full"
+                  href="https://github.com/samrosemohammed/omnifood-project"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  class="ml-3 bg-green-700 rounded-full px-4 py-1"
+                  target="_blank"
+                  href="https://omnifood.mohammedsamrose.com.np/"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+
+            <div class="tool-bg p-8 rounded-lg">
+              <img class="rounded mb-6" src="img/pgame.png" alt="" />
+
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">PingPong Project</h3>
+                <p class="text-slate-400">
+                  A interactive user-friendly game project ping pong. By
+                  completing this project I was able to reliaze how JavaScript
+                  works behind the scenes.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  class="cursor-pointer border-2 border-slate-700 px-4 py-1 rounded-full"
+                  href="https://github.com/samrosemohammed/p-game"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  class="ml-3 bg-green-700 rounded-full px-4 py-1"
+                  href="https://pgame.mohammedsamrose.com.np"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+
+            <div class="tool-bg p-8 rounded-lg">
+              <img class="rounded mb-6" src="img/guess-game.png" alt="" />
+
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Guess Project</h3>
+                <p class="text-slate-400">
+                  A interactive user-friendly game project guess game. I enjoyed
+                  a lot while working in this project. Made with the concept of
+                  DOM and event listener.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  class="cursor-pointer border-2 border-slate-700 px-4 py-1 rounded-full"
+                  href="https://github.com/samrosemohammed/guess-game"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  class="ml-3 bg-green-700 rounded-full px-4 py-1"
+                  href="https://guess.mohammedsamrose.com.np"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+
+            <div class="tool-bg p-8 rounded-lg lg:hidden md:block hidden">
+              <img class="rounded mb-6" src="img/guess-game.png" alt="" />
+
+              <div>
+                <h3 class="text-[20px] font-semibold mb-2">Guess Project</h3>
+                <p class="text-slate-400">
+                  A interactive user-friendly game project guess game. I enjoyed
+                  a lot while working in this project. Made with the concept of
+                  DOM and event listener.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  class="cursor-pointer border-2 border-slate-700 px-4 py-1 rounded-full"
+                  href="https://github.com/samrosemohammed/guess-game"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  class="ml-3 bg-green-700 rounded-full px-4 py-1"
+                  href="https://guess.mohammedsamrose.com.np"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-footer md:p-24 pb-5 px-10">
+        <div class="container mx-auto border-t-2 border-slate-800 text-center">
+          <div class="mt-8 text-slate-400">
+            <p class="md:text-[16px] text-[10px] mb-1">
+              Trying or Learning something new. But can't understand or maybe
+              frustrating ?
+            </p>
+            <p class="md:text-[16px] text-[10px] mb-4">
+              Nevermind take a rest and
+              <span class="font-semibold text-green-400">try agian</span>
+            </p>
+          </div>
+          <div class="social-icon mt-4">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100069831617699"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all"
+                name="logo-facebook"
+              ></ion-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://twitter.com/MohammedSamrose"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
+                name="logo-twitter"
+              ></ion-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/bekey_9/"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/mohammed-samrose/"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
+                name="logo-linkedin"
+              ></ion-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/samrosemohammed"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
+                name="logo-github"
+              ></ion-icon>
+            </a>
+            <a
+              target="_blank"
+              href="https://medium.com/@samrose.mohammed"
+              class="cursor-pointer"
+            >
+              <ion-icon
+                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
+                name="logo-medium"
+              ></ion-icon>
+            </a>
+          </div>
+          <p class="md:text-[16px] text-[10px] copyright mt-4 text-slate-400">
+            Copyright &copy; <span class="copyright-date"></span> by Mohammed
+            Samrose.
+          </p>
         </div>
       </section>
     </main>
