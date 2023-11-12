@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Unicons Icon -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-
     <link rel="icon" href="img/brand-icon.png" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- Ionicons (Icon) -->
     <script
       type="module"
@@ -23,58 +20,59 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
     <!-- Tailwind CSS -->
     <script defer src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Typed Js -->
-
     <!-- JavaScript -->
     <script defer src="js/script.js"></script>
-
     <title>Samrose | Portfolio</title>
   </head>
-
   <body>
-    <header class="header flex justify-between items-center py-6 md:px-12 px-6">
-      <a class="" href="#"
-        ><img class="w-1/3 object-contain" src="img/brand-logo.png" alt=""
-      /></a>
-
+    <header
+      class="header flex justify-between items-center md:px-12 sm:p-6 px-4 py-6"
+    >
+      <a href="#">
+        <img class="w-[40%]" src="img/brand-logo.png" alt="Samrose Logo" />
+      </a>
       <nav class="hidden md:block">
         <ul class="flex gap-[2vw]">
-          <li class="">
+          <li>
             <a
-              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500 cursor-pointer"
               href="#"
               >Home</a
             >
           </li>
-          <li class="">
+          <li>
             <a
-              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500 cursor-pointer"
               href="#about"
               >About</a
             >
           </li>
-          <li class="">
+          <li>
             <a
-              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500 cursor-pointer"
               href="#services"
               >Services</a
             >
           </li>
-          <li class="">
+          <li>
             <a
-              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-400 hover:text-white duration-500 cursor-pointer"
               href="#projects"
               >Projects</a
             >
           </li>
+          <li>
+            <a
+              class="text-[18px] text-slate-400 hover:text-white duration-500 cursor-pointer"
+              href="#contact"
+              >Contact
+            </a>
+          </li>
         </ul>
       </nav>
-
-      <button class="btn icon-btn md:hidden">
+      <button class="btn icon-btn md:hidden mt-2">
         <ion-icon
           class="icon-open w-[40px] h-[40px]"
           name="menu-outline"
@@ -85,36 +83,41 @@
         ></ion-icon>
       </button>
     </header>
-
     <!-- Mobile Navigation  -->
     <div
-      class="fixed mobile-nav hidden md:hidden top-[65px] right-[38px] min-w-[140px] text-center rounded py-3 my-2 tool-bg"
+      class="mobile-nav tool-bg min-w-[140px] fixed hidden md:hidden text-center rounded top-[65px] right-[38px] py-3 my-2 z-[999]"
     >
       <nav class="text-[18px]">
         <ul class="list-none">
           <li class="mb-1">
-            <a class="text-slate-400 hover:text-white duration-500" href="#"
+            <a class="text-slate-300 hover:text-white duration-500" href="#"
               >Home</a
             >
           </li>
           <li class="mb-1">
-            <a class="text-slate-400 hover:text-white duration-500" href="#"
+            <a
+              class="text-slate-300 hover:text-white duration-500"
+              href="#projects"
               >Project</a
             >
           </li>
           <li class="mb-1">
-            <a class="text-slate-400 hover:text-white duration-500" href="#"
+            <a
+              class="text-slate-300 hover:text-white duration-500"
+              href="#about"
               >About</a
             >
           </li>
           <li class="mb-1">
-            <a class="text-slate-400 hover:text-white duration-500" href="#"
+            <a
+              class="text-slate-300 hover:text-white duration-500"
+              href="#services"
               >Service</a
             >
           </li>
           <li class="">
             <a
-              class="text-[18px] text-slate-400 hover:text-white duration-500"
+              class="text-[18px] text-slate-300 hover:text-white duration-500"
               href="#contact"
               >Contact</a
             >
@@ -127,45 +130,33 @@
       <!-- Hero Section -->
       <section
         id="home"
-        class="hero-section md:px-24 md:py-24 py-10 lg:text-left text-center"
+        class="hero-section lg:text-left text-center md:px-24 md:py-24 py-10"
       >
         <div class="hero-box flex lg:flex-row flex-col gap-[2vw] z-[2]">
           <div class="flex-1 mb-8">
             <h1
-              class="xl:text-[72px] md:text-[62px] sm:text-[58px] text-[38px] leading-tight font-bold xl:mb-12 mb-4 tracking-tight"
+              class="xl:text-[72px] md:text-[62px] sm:text-[58px] text-[38px] leading-tight font-bold tracking-tight xl:mb-12 mb-4"
             >
               I'm Samrose <br />
               <span class="md:inline-block hidden">A</span> Software Engineer
               <br />
-              <span class="multiple text-cyan-300">Student.</span>
+              <span class="text-cyan-300">Student.</span>
             </h1>
             <p
-              class="text-[18px] sm:max-w-[470px] max-w-[300px] lg:text-left lg:mx-0 mx-auto text-slate-400"
+              class="sm:max-w-[470px] max-w-[300px] mx-auto text-[18px] text-slate-400 lg:text-left lg:mx-0"
             >
               A self educated learner who believe in the courage of trying once
               more even though he fails.
             </p>
-
-            <!-- <div class="hire-box text-white">
-              <a
-                class="bg-blue-600 px-[15px] py-[5px] rounded-full mr-2"
-                href="#"
-                >Resume</a
-              >
-              <a
-                class="border-2 border-slate-700 px-[15px] py-[5px] rounded-full mr-2"
-                href="#"
-                >Github Profile</a
-              >
-              <a class="bg-blue-600 px-[15px] py-[5px] rounded-full" href="#"
-                >Hire Me</a
-              >
-            </div> -->
           </div>
           <div
             class="container mx-auto lg:mx-0 lg:w-1/3 text-center w-[55%] relative"
           >
-            <img class="z-[5]" src="img/code.png" alt="" />
+            <img
+              class="z-[5]"
+              src="img/code.png"
+              alt="Graphic Image of Code Lines"
+            />
             <div
               class="w-[45%] h-[45%] top-0 z-[0] pink-gradient absolute"
             ></div>
@@ -190,7 +181,6 @@
               <span class="font-semibold">software.</span>
             </h2>
           </div>
-
           <div
             class="tool-container grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-[10px] md:max-w-[1080px] max-w-[780px] mx-auto"
           >
@@ -421,7 +411,7 @@
               <div
                 class="p-8 rounded-xl shadow-md shadow-emerald-400 md:mb-0 mb-8 md:w-full w-[95%]"
               >
-                <img class="" src="img/front-end.png" alt="" />
+                <img class="" src="img/front-end.png" alt="Code Screenshot" />
               </div>
             </div>
           </div>
@@ -458,10 +448,6 @@
       >
         <div class="container mx-auto">
           <div class="service-head mb-10">
-            <!-- <span
-              class="capitalize text-[16px] text-slate-400 border-b-2 border-green-400 mb-1 inline-block"
-              >services</span
-            > -->
             <h2 class="capitalize text-[28px] text-center">
               Here are few services i can
               <span class="font-bold">offer !!</span>
@@ -526,7 +512,7 @@
                 <h3 class="text-[20px] font-semibold mb-2">Graphic Design</h3>
                 <p class="text-slate-400 mb-6">
                   Advertising your product online is great. I can create
-                  attractive post, banner, video to attract most of the user.
+                  attractive post, banner, video to attract most of your user.
                 </p>
               </div>
               <a class="border-b-2 border-green-600" href="#">See More</a>
@@ -583,7 +569,11 @@
             class="project-body max-w-[1080px] mx-auto grid lg:grid-cols-3 md:grid-cols-2 md:gap-[1vw] gap-[3vw] rounded"
           >
             <div class="tool-bg p-8 rounded-lg">
-              <img class="rounded mb-6" src="img/omnifood-image.png" alt="" />
+              <img
+                class="rounded mb-6"
+                src="img/omnifood-image.png"
+                alt="Omnifood Project"
+              />
 
               <div>
                 <h3 class="text-[20px] font-semibold mb-2">Ominfood Project</h3>
@@ -610,7 +600,11 @@
             </div>
 
             <div class="tool-bg p-8 rounded-lg">
-              <img class="rounded mb-6" src="img/pgame.png" alt="" />
+              <img
+                class="rounded mb-6"
+                src="img/pgame.png"
+                alt="Ping Pong Game"
+              />
 
               <div>
                 <h3 class="text-[20px] font-semibold mb-2">PingPong Project</h3>
@@ -637,7 +631,11 @@
             </div>
 
             <div class="tool-bg p-8 rounded-lg">
-              <img class="rounded mb-6" src="img/guess-game.png" alt="" />
+              <img
+                class="rounded mb-6"
+                src="img/guess-game.png"
+                alt="Guessing Game Project"
+              />
 
               <div>
                 <h3 class="text-[20px] font-semibold mb-2">Guess Project</h3>
@@ -693,86 +691,177 @@
         </div>
       </section>
 
-      <section id="contact" class="section-footer md:p-24 pb-5 px-10">
-        <div class="container mx-auto border-t-2 border-slate-800 text-center">
-          <div class="mt-8 text-slate-400">
-            <p class="md:text-[16px] text-[10px] mb-1">
-              Trying or Learning something new. But can't understand or maybe
-              frustrating ?
-            </p>
-            <p class="md:text-[16px] text-[10px] mb-4">
-              Nevermind take a rest and
-              <span class="font-semibold text-green-400">try agian</span>
-            </p>
+      <footer class="sm:pt-[96px] pt-5 border-t-2 border-t-slate-800 px-5">
+        <div class="mx-auto w-full max-w-[1200px] p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center -ml-3">
+                <img
+                  src="img/brand-logo.png"
+                  class="h-[48px] me-3"
+                  alt="Samrose Logo"
+                />
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Resources
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://www.w3schools.com/"
+                      target="_blank"
+                      class="hover:underline"
+                      >W3Schools</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindcss.com/"
+                      target="_blank"
+                      class="hover:underline"
+                      >Tailwind CSS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Follow us
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/samrosemohammed"
+                      target="_blank"
+                      class="hover:underline"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://medium.com/@samrose.mohammed"
+                      target="_blank"
+                      class="hover:underline"
+                      >Medium</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Contact
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Kathmandu</a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:samrose.mohammed@gmail.com"
+                      class="hover:underline"
+                      >Gmail</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  About
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Freelancer</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:underline"
+                      >UI/UX &amp; Developer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="social-icon mt-4">
-            <a
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=100069831617699"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all"
-                name="logo-facebook"
-              ></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://twitter.com/MohammedSamrose"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
-                name="logo-twitter"
-              ></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/bekey_9/"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
-                name="logo-instagram"
-              ></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/mohammed-samrose/"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
-                name="logo-linkedin"
-              ></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/samrosemohammed"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
-                name="logo-github"
-              ></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://medium.com/@samrose.mohammed"
-              class="cursor-pointer"
-            >
-              <ion-icon
-                class="w-[20px] h-[20px] border-2 border-green-700 rounded-full p-2 hover:bg-green-600 transition-all ml-1"
-                name="logo-medium"
-              ></ion-icon>
-            </a>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© <span class="copyright-date"></span>
+              <a href="#" class="hover:underline">MD Samrose</a>. All Rights
+              Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a
+                href="https://www.facebook.com/profile.php?id=100069831617699"
+                target="_blank"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <ion-icon
+                  class="w-[18px] h-[18px]"
+                  name="logo-facebook"
+                ></ion-icon>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="https://www.instagram.com/bekey_9/"
+                target="_blank"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <ion-icon
+                  class="w-[18px] h-[18px]"
+                  name="logo-instagram"
+                ></ion-icon>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a
+                href="https://twitter.com/MohammedSamrose"
+                target="_blank"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <ion-icon
+                  class="w-[18px] h-[18px]"
+                  name="logo-twitter"
+                ></ion-icon>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="https://github.com/samrosemohammed"
+                target="_blank"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <ion-icon
+                  class="w-[18px] h-[18px]"
+                  name="logo-github"
+                ></ion-icon>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mohammed-samrose/"
+                target="_blank"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <ion-icon
+                  class="w-[18px] h-[18px]"
+                  name="logo-linkedin"
+                ></ion-icon>
+                <span class="sr-only">Linkedin account</span>
+              </a>
+            </div>
           </div>
-          <p class="md:text-[16px] text-[10px] copyright mt-4 text-slate-400">
-            Copyright &copy; <span class="copyright-date"></span> by Mohammed
-            Samrose.
-          </p>
         </div>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
